@@ -1,12 +1,12 @@
-import mongoose, { Schema, schema } from 'mongoose'
-import modelOptions from './model.options'
+import mongoose, { Schema } from 'mongoose'
+import modelOptions from './model.options.js'
 
 export default mongoose.model(
   'Review',
   mongoose.Schema(
     {
       user: {
-        type: Schema.Type.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'User',
         required: true,
       },
@@ -24,7 +24,7 @@ export default mongoose.model(
         required: true,
       },
       mediaTitle: {
-        Type: String,
+        type: String,
         required: true,
       },
       mediaPoster: {

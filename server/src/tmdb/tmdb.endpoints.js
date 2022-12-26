@@ -1,4 +1,4 @@
-import tmdbConfig from './tmdb.config'
+import tmdbConfig from './tmdb.config.js'
 
 const tmdbEnpoints = {
   mediaList: ({ mediaType, mediaCategory, page }) =>
